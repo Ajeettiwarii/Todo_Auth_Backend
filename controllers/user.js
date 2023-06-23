@@ -40,7 +40,7 @@ export const login = async (req, res, next) => {
   if (!ismatch)
     return res.status(404).json({
       success: false,
-      message: "invalid email or password ",
+      message: "invalid email || password   ",
     });
   sendcookie(user, res, `welcome back,${user.name}`, 200);
 };
